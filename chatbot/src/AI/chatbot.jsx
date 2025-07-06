@@ -8,8 +8,8 @@ import { companyInfo } from './companyInfo';
 
 function Chatbot() {
  const [chatHistory, setChatHistory] = useState([
-    { hideInChat: true, role: "model", text: companyInfo }, // Hidden training message
-    { role: "model", text: "👋 Hey there!\nHow can I help you today?" }, // Initial visible message
+    { hideInChat: true, role: "model", text: companyInfo }, 
+    { role: "model", text: "👋 Hey there!\nHow can I help you today?" }, 
   ]);
 
   const [showChatbot, setShowChatbot] = useState(false);
