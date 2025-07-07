@@ -8,7 +8,7 @@ import { companyInfo } from './companyInfo';
 
 function Chatbot() {
  const [chatHistory, setChatHistory] = useState([
-    { hideInChat: true, role: "model", text: companyInfo }, 
+    { hideInChat: true, role: "model", text: JSON.stringify(companyInfo) },
     { role: "model", text: "👋 Hey there!\nHow can I help you today?" }, 
   ]);
 
